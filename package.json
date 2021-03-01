@@ -1,13 +1,13 @@
 {
-  "name": "statement-codes",
-  "version": "1.0.1",
+  "name": "@r4digital/statement-codes",
+  "version": "1.0.2",
   "description": "Statement enum codes",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
     "clean": "tsc --build --clean",
     "build": "tsc",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
