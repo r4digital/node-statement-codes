@@ -1,6 +1,6 @@
 {
   "name": "@r4digital/statement-codes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Statement enum codes",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -24,5 +24,12 @@
     "eslint-plugin-import": "^2.22.1",
     "typescript": "^4.2.2"
   },
-  "author": "Henrique Schmidt <henrique.schmidt@somosphi.com>"
+  "author": "Henrique Schmidt <henrique.schmidt@somosphi.com>",
+  "bugs": {
+    "url": "https://github.com/r4digital/statement-codes/issues"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {}
 }
