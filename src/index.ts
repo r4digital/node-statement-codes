@@ -1,5 +1,9 @@
 export enum Name {
-  FeesDebit = 'FEES_DEBIT', // Tarifa
+  FeesDebit = 'FEES_DEBIT', // Débito tarifa
+  FeesRefundCredit = 'FEES_REFUND_CREDIT', // Crédito estorno tarifa
+
+  AdjustmentDebit = 'ADJUSTMENT_DEBIT', // Ajuste a débito
+  AdjustmentCredit = 'ADJUSTMENT_CREDIT', // Ajuste a credito
 
   // TED: Transferência Eletrônica Disponível
   TedSameHolderDebit = 'TED_SAME_HOLDER_DEBIT', // Envio TED mesma titularidade
@@ -16,10 +20,33 @@ export enum Name {
   DocOtherHolderCredit = 'DOC_OTHER_HOLDER_CREDIT', // Recebimento DOC outra titularidade
   DocSameHolderRefundCredit = 'DOC_SAME_HOLDER_REFUND_CREDIT', // Estorno DOC mesma titularidade
   DocOtherHolderRefundCredit = 'DOC_OTHER_HOLDER_REFUND_CREDIT', // Estorno DOC outra titularidade
+
+  // TEF: Transferência Eletrônica de Fundos
+  TefDebit = 'TEF_DEBIT', // Débito transf. interna entre contas
+  TefCredit = 'TEF_CREDIT', // Crédito transf. interna entre contas
+  TefRefundCredit = 'TEF_REFUND_CREDIT', // Crédito estorno transf. interna entre contas
+  TefRefundDebit = 'TEF_REFUND_DEBIT', // Débito estorno transf. interna entre contas
+
+  // Pagamento de contas
+  BillPaymentDebit = 'BILL_PAYMENT_DEBIT', // Pagamento de contas tributos e impostos
+  BillPaymentRefundCredit = 'BILL_PAYMENT_REFUND_CREDIT', // Estorno pagamento de contas tributos e impostos
+
+  CellRechargeDebit = 'CELL_RECHARGE_DEBIT', //
+  CellRechargeRefundCredit = 'CELL_RECHARGE_REFUND_CREDIT', // Estorno
+
+  SalaryCredit = 'SALARY_CREDIT', //
+  SalaryRefundDebit = 'SALARY_REFUND_DEBIT', // Estorno
+
+  LoanReleaseCredit = 'LOAN_RELEASE_CREDIT',
+  LoanReleaseRefundDebit = 'LOAN_RELEASE_REFUND_DEBIT', // Estorno
 }
 
 export enum Value {
   FEES_DEBIT = 8,
+  FEES_REFUND_CREDIT = 1008,
+
+  ADJUSTMENT_DEBIT = 9000,
+  ADJUSTMENT_CREDIT = 9001,
 
   TED_SAME_HOLDER_DEBIT = 4,
   TED_OTHER_HOLDER_DEBIT = 5,
@@ -34,4 +61,22 @@ export enum Value {
   DOC_OTHER_HOLDER_CREDIT = 503,
   DOC_SAME_HOLDER_REFUND_CREDIT = 1002,
   DOC_OTHER_HOLDER_REFUND_CREDIT = 1003,
+
+  TEF_DEBIT = 1,
+  TEF_CREDIT = 501,
+  TEF_REFUND_CREDIT = 1001,
+  TEF_REFUND_DEBIT = 1501,
+
+  BILL_PAYMENT_DEBIT = 7,
+  BILL_PAYMENT_REFUND_CREDIT = 1007,
+
+  CELL_RECHARGE_DEBIT = 6,
+  CELL_RECHARGE_REFUND_CREDIT = 1006,
+
+  SALARY_CREDIT = 507,
+  SALARY_REFUND_DEBIT = 1507,
+
+  LOAN_RELEASE_CREDIT = 506,
+  LOAN_RELEASE_REFUND_DEBIT = 1506,
+
 }
