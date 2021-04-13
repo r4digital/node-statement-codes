@@ -30,6 +30,8 @@ export enum Name {
   // Pagamento de contas
   BillPaymentDebit = 'BILL_PAYMENT_DEBIT', // Pagamento de contas tributos e impostos
   BillPaymentRefundCredit = 'BILL_PAYMENT_REFUND_CREDIT', // Estorno pagamento de contas tributos e impostos
+  BillPaymentTransferCredit = 'BILL_PAYMENT_TRANSFER_CREDIT',
+  BillPaymentTransferDebit = 'BILL_PAYMENT_TRANSFER_DEBIT',
 
   CellRechargeDebit = 'CELL_RECHARGE_DEBIT', // Recarga celular
   CellRechargeRefundCredit = 'CELL_RECHARGE_REFUND_CREDIT', // Estorno recarga celular
@@ -69,6 +71,8 @@ export enum Value {
 
   BILL_PAYMENT_DEBIT = 7,
   BILL_PAYMENT_REFUND_CREDIT = 1007,
+  BILL_PAYMENT_TRANSFER_CREDIT = -1,
+  BILL_PAYMENT_TRANSFER_DEBIT = -1,
 
   CELL_RECHARGE_DEBIT = 6,
   CELL_RECHARGE_REFUND_CREDIT = 1006,
