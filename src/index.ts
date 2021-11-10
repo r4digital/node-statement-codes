@@ -1,5 +1,6 @@
 export enum Name {
   FeesDebit = 'FEES_DEBIT', // Debito tarifa
+  FeesCredit = 'FEES_CREDIT', // Credito tarifa
   FeesRefundCredit = 'FEES_REFUND_CREDIT', // Credito estorno tarifa
 
   AdjustmentDebit = 'ADJUSTMENT_DEBIT', // Ajuste a debito
@@ -45,6 +46,7 @@ export enum Name {
 
 export enum Value {
   FEES_DEBIT = 8,
+  FEES_CREDIT = 500,
   FEES_REFUND_CREDIT = 1008,
 
   ADJUSTMENT_DEBIT = 9000,
