@@ -13,6 +13,8 @@ export enum Name {
   TedOtherHolderCredit = 'TED_OTHER_HOLDER_CREDIT', // Recebimento TED outra titularidade
   TedSameHolderRefundCredit = 'TED_SAME_HOLDER_REFUND_CREDIT', // Estorno TED mesma titularidade
   TedOtherHolderRefundCredit = 'TED_OTHER_HOLDER_REFUND_CREDIT', // Estorno TED outra titularidade
+  TedPartnerDebit = 'TED_PARTNER_DEBIT', // Envio TED conta parceiro
+  TedPartnerRefundCredit = 'TED_PARTNER_REFUND_CREDIT', // Estorno TED conta parceiro
 
   // DOC: Documento de Ordem de Credito
   DocSameHolderDebit = 'DOC_SAME_HOLDER_DEBIT', // Envio DOC mesma titularidade
@@ -58,6 +60,8 @@ export enum Value {
   TED_OTHER_HOLDER_CREDIT = 505,
   TED_SAME_HOLDER_REFUND_CREDIT = 1004,
   TED_OTHER_HOLDER_REFUND_CREDIT = 1005,
+  TED_PARTNER_DEBIT = 10,
+  TED_PARTNER_REFUND_CREDIT = 1401,
 
   DOC_SAME_HOLDER_DEBIT = 2,
   DOC_OTHER_HOLDER_DEBIT = 3,
