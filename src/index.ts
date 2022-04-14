@@ -44,6 +44,26 @@ export enum Name {
 
   LoanReleaseCredit = 'LOAN_RELEASE_CREDIT', // Liberacao emprestimo ou financiamento
   LoanReleaseRefundDebit = 'LOAN_RELEASE_REFUND_DEBIT', // Estorno liberacao emprestimo ou financiamento
+
+  // Pix
+  PixInternalDebit = 'PIX_INTERNAL_DEBIT', // Envio de Pix interno
+  PixExternalDebit = 'PIX_EXTERNAL_DEBIT', // Envio de Pix externo
+  PixInternalCredit = 'PIX_INTERNAL_CREDIT', // Recebimento de Pix interno
+  PixExternalCredit = 'PIX_EXTERNAL_CREDIT', // Recebimento de Pix externo
+  PixReturnInternalDebit = 'PIX_RETURN_INTERNAL_DEBIT', // Envio de devolucao de pix interno
+  PixReturnExternalDebit = 'PIX_RETURN_EXTERNAL_DEBIT', // Envio de devolucao de pix externo
+  PixReturnInternalCredit = 'PIX_RETURN_INTERNAL_CREDIT', // Recebimento de devolucao de pix interno
+  PixReturnExternalCredit = 'PIX_RETURN_EXTERNAL_CREDIT', // Recebimento de devolucao de pix externo
+  PixInternalRefundCredit = 'PIX_INTERNAL_REFUND_CREDIT', // Estorno de pix enviado interno
+  PixExternalRefundCredit = 'PIX_EXTERNAL_REFUND_CREDIT', // Estorno de pix enviado externo
+  PixReturnInternalRefundCredit = 'PIX_RETURN_INTERNAL_REFUND_CREDIT', // Estorno de devolucao de pix enviada interno
+  PixReturnExternalRefundCredit = 'PIX_RETURN_EXTERNAL_REFUND_CREDIT', // Estorno de devolucao de pix enviada externo
+  PixWithdrawDebit = 'PIX_WITHDRAW_DEBIT', // Envio de Pix Saque
+  PixChangePurchaseAmountDebit = 'PIX_CHANGE_PURCHASE_AMOUNT_DEBIT', // Valor da compra informada no pix troco
+  PixChangeAvailableCashDebit = 'PIX_CHANGE_AVAILABLE_CASH_DEBIT', // Valor disponibilizado em dinheiro no pix troco
+  PixWithdrawRefundCredit = 'PIX_WITHDRAW_REFUND_CREDIT', // Estorno de Pix Saque enviado
+  PixChangePurchaseAmountRefundCredit = 'PIX_CHANGE_PURCHASE_AMOUNT_REFUND_CREDIT', // Estorno de valor da compra informada no pix troco
+  PixChangeAvailableCashRefundCredit = 'PIX_CHANGE_AVAILABLE_CASH_REFUND_CREDIT', // Estorno de valor disponibilizado em dinheiro no pix troco
 }
 
 export enum Value {
@@ -88,4 +108,23 @@ export enum Value {
 
   LOAN_RELEASE_CREDIT = 506,
   LOAN_RELEASE_REFUND_DEBIT = 1506,
+
+  PIX_INTERNAL_DEBIT = 101,
+  PIX_EXTERNAL_DEBIT = 103,
+  PIX_INTERNAL_CREDIT = 603,
+  PIX_EXTERNAL_CREDIT = 604,
+  PIX_RETURN_INTERNAL_DEBIT = 106,
+  PIX_RETURN_EXTERNAL_DEBIT = 102,
+  PIX_RETURN_INTERNAL_CREDIT = 601,
+  PIX_RETURN_EXTERNAL_CREDIT = 602,
+  PIX_INTERNAL_REFUND_CREDIT = 1101,
+  PIX_EXTERNAL_REFUND_CREDIT = 1103,
+  PIX_RETURN_INTERNAL_REFUND_CREDIT = 1106,
+  PIX_RETURN_EXTERNAL_REFUND_CREDIT = 1102,
+  PIX_WITHDRAW_DEBIT = 109,
+  PIX_CHANGE_PURCHASE_AMOUNT_DEBIT = 111,
+  PIX_CHANGE_AVAILABLE_CASH_DEBIT = 112,
+  PIX_WITHDRAW_REFUND_CREDIT = 1109,
+  PIX_CHANGE_PURCHASE_AMOUNT_REFUND_CREDIT = 1111,
+  PIX_CHANGE_AVAILABLE_CASH_REFUND_CREDIT = 1112,
 }
