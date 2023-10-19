@@ -26,9 +26,13 @@ export enum Name {
 
   // TEF: Transferencia Eletronica de Fundos
   TefDebit = 'TEF_DEBIT', // Debito transf. interna entre contas
-  TefCredit = 'TEF_CREDIT', // Credito transf. interna entre contas
-  TefRefundCredit = 'TEF_REFUND_CREDIT', // Credito estorno transf. interna entre contas
   TefRefundDebit = 'TEF_REFUND_DEBIT', // Debito estorno transf. interna entre contas
+  TefCredit = 'TEF_CREDIT', // DEPRECATED - Credito transf. interna entre contas
+  TefRefundCredit = 'TEF_REFUND_CREDIT', // DEPRECATED - Credito estorno transf. interna entre contas
+  TefSameHolderCredit = 'TEF_SAME_HOLDER_CREDIT', // Credito transf. interna entre contas de mesma titularidade
+  TefSameHolderRefundCredit = 'TEF_SAME_HOLDER_REFUND_CREDIT', // Credito estorno transf. interna entre contas de mesma titularidade
+  TefOtherHolderCredit = 'TEF_OTHER_HOLDER_CREDIT', // Credito transf. interna entre contas de diferente titularidade
+  TefOtherHolderRefundCredit = 'TEF_OTHER_HOLDER_REFUND_CREDIT', // Credito estorno transf. interna entre contas de diferente titularidade
 
   // Pagamento de contas
   BillPaymentDebit = 'BILL_PAYMENT_DEBIT', // Pagamento de contas tributos e impostos
@@ -50,8 +54,12 @@ export enum Name {
   // Pix
   PixInternalDebit = 'PIX_INTERNAL_DEBIT', // Envio de Pix interno
   PixExternalDebit = 'PIX_EXTERNAL_DEBIT', // Envio de Pix externo
-  PixInternalCredit = 'PIX_INTERNAL_CREDIT', // Recebimento de Pix interno
-  PixExternalCredit = 'PIX_EXTERNAL_CREDIT', // Recebimento de Pix externo
+  PixInternalCredit = 'PIX_INTERNAL_CREDIT', // DEPRECATED - Recebimento de Pix interno
+  PixInternalOtherHolderCredit = 'PIX_INTERNAL_OTHER_HOLDER_CREDIT', // Recebimento de Pix interno de diferente titularidade
+  PixInternalSameHolderCredit = 'PIX_INTERNAL_SAME_HOLDER_CREDIT', // Recebimento de Pix interno de mesma titularidade
+  PixExternalCredit = 'PIX_EXTERNAL_CREDIT', // DEPRECATED - Recebimento de Pix externo
+  PixExternalOtherHolderCredit = 'PIX_EXTERNAL_OTHER_HOLDER_CREDIT', // Recebimento de Pix externo de diferente titularidade
+  PixExternalSameHolderCredit = 'PIX_EXTERNAL_SAME_HOLDER_CREDIT', // Recebimento de Pix externo de mesma titularidade
   PixReturnInternalDebit = 'PIX_RETURN_INTERNAL_DEBIT', // Envio de devolucao de pix interno
   PixReturnExternalDebit = 'PIX_RETURN_EXTERNAL_DEBIT', // Envio de devolucao de pix externo
   PixReturnInternalCredit = 'PIX_RETURN_INTERNAL_CREDIT', // Recebimento de devolucao de pix interno
@@ -93,9 +101,13 @@ export enum Value {
   DOC_OTHER_HOLDER_REFUND_CREDIT = 1003,
 
   TEF_DEBIT = 1,
-  TEF_CREDIT = 501,
-  TEF_REFUND_CREDIT = 1001,
   TEF_REFUND_DEBIT = 1501,
+  TEF_CREDIT = 501, // DEPRECATED
+  TEF_REFUND_CREDIT = 1001, // DEPRECATED
+  TEF_SAME_HOLDER_CREDIT = 514,
+  TEF_SAME_HOLDER_REFUND_CREDIT = 1514,
+  TEF_OTHER_HOLDER_CREDIT = 513,
+  TEF_OTHER_HOLDER_REFUND_CREDIT = 1513,
 
   BILL_PAYMENT_DEBIT = 7,
   BILL_PAYMENT_REFUND_CREDIT = 1007,
@@ -115,8 +127,12 @@ export enum Value {
 
   PIX_INTERNAL_DEBIT = 101,
   PIX_EXTERNAL_DEBIT = 103,
-  PIX_INTERNAL_CREDIT = 603,
-  PIX_EXTERNAL_CREDIT = 604,
+  PIX_INTERNAL_CREDIT = 603, // DEPRECATED
+  PIX_INTERNAL_OTHER_HOLDER_CREDIT = 607,
+  PIX_INTERNAL_SAME_HOLDER_CREDIT = 609,
+  PIX_EXTERNAL_CREDIT = 604, // DEPRECATED
+  PIX_EXTERNAL_OTHER_HOLDER_CREDIT = 611,
+  PIX_EXTERNAL_SAME_HOLDER_CREDIT = 613,
   PIX_RETURN_INTERNAL_DEBIT = 106,
   PIX_RETURN_EXTERNAL_DEBIT = 102,
   PIX_RETURN_INTERNAL_CREDIT = 601,
