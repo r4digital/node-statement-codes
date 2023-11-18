@@ -92,6 +92,12 @@ export enum Name {
   PixWithdrawRefundCredit = 'PIX_WITHDRAW_REFUND_CREDIT', // Estorno de Pix Saque enviado
   PixChangePurchaseAmountRefundCredit = 'PIX_CHANGE_PURCHASE_AMOUNT_REFUND_CREDIT', // Estorno de valor da compra informada no pix troco
   PixChangeAvailableCashRefundCredit = 'PIX_CHANGE_AVAILABLE_CASH_REFUND_CREDIT', // Estorno de valor disponibilizado em dinheiro no pix troco
+
+  // Investment
+  InvestmentDebit = 'INVESTMENT_DEBIT', // Aplicação em investimento
+  InvestmentCredit = 'INVESTMENT_CREDIT', // Resgate de investimento
+  TransitoryCreditInvestment = 'TRANSITORY_CREDIT_INVESTMENT', // Credito transitório de investimento
+  TransitoryDebitInvestment = 'TRANSITORY_DEBIT_INVESTMENT', // Debito transitório de investimento
 }
 
 export enum Value {
@@ -184,4 +190,9 @@ export enum Value {
   PIX_CHANGE_PURCHASE_AMOUNT_REFUND_CREDIT = 1111,
   PIX_CHANGE_AVAILABLE_CASH_REFUND_CREDIT = 1112,
   PIX_EXTERNAL_REFUND_DEBIT = 1604,
+
+  INVESTMENT_DEBIT = 901,
+  INVESTMENT_CREDIT = 902,
+  TRANSITORY_CREDIT_INVESTMENT = 911,
+  TRANSITORY_DEBIT_INVESTMENT = 912,
 }
