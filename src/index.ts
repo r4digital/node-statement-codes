@@ -95,9 +95,8 @@ export enum Name {
 
   // Investment
   InvestmentDebit = 'INVESTMENT_DEBIT', // Aplicação em investimento
-  InvestmentCredit = 'INVESTMENT_CREDIT', // Resgate de investimento
-  TransitoryCreditInvestment = 'TRANSITORY_CREDIT_INVESTMENT', // Credito transitório de investimento
-  TransitoryDebitInvestment = 'TRANSITORY_DEBIT_INVESTMENT', // Debito transitório de investimento
+  InvestmentTotalCredit = 'INVESTMENT_TOTAL_CREDIT', // Resgate total de investimento
+  InvestmentPartialCredit = 'INVESTMENT_PARTIAL_CREDIT', // Resgate parcial de investimento
 }
 
 export enum Value {
@@ -191,8 +190,7 @@ export enum Value {
   PIX_CHANGE_AVAILABLE_CASH_REFUND_CREDIT = 1112,
   PIX_EXTERNAL_REFUND_DEBIT = 1604,
 
-  INVESTMENT_DEBIT = 901,
-  INVESTMENT_CREDIT = 902,
-  TRANSITORY_CREDIT_INVESTMENT = 911,
-  TRANSITORY_DEBIT_INVESTMENT = 912,
+  INVESTMENT_DEBIT = 52,
+  INVESTMENT_TOTAL_CREDIT = 552,
+  INVESTMENT_PARTIAL_CREDIT = 553,
 }
