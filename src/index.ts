@@ -51,7 +51,7 @@ export enum Name {
   LoanReleaseCredit = 'LOAN_RELEASE_CREDIT', // Liberacao emprestimo ou financiamento
   LoanReleaseRefundDebit = 'LOAN_RELEASE_REFUND_DEBIT', // Estorno liberacao emprestimo ou financiamento
 
-  PayrollLoanReleaseCredit = 'PAYROLL_LOAN_RELEASE_CREDIT', // Liberação de Operação de Credito
+  PayrollLoanReleaseCredit = 'PAYROLL_LOAN_RELEASE_CREDIT', // Liberação de Operação de Crédito
 
   // Pix
   PixInternalDebit = 'PIX_INTERNAL_DEBIT', // Envio de Pix interno
