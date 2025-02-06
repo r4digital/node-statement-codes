@@ -95,8 +95,7 @@ export enum Name {
 
   // Investment
   InvestmentDebit = 'INVESTMENT_DEBIT', // Aplicação em investimento
-  InvestmentTotalCredit = 'INVESTMENT_TOTAL_CREDIT', // Resgate total de investimento
-  InvestmentPartialCredit = 'INVESTMENT_PARTIAL_CREDIT', // Resgate parcial de investimento
+  InvestmentTotalCredit = 'INVESTMENT_TOTAL_CREDIT', // Resgate de investimento - total ou parcial 
 }
 
 export enum Value {
@@ -192,5 +191,4 @@ export enum Value {
 
   INVESTMENT_DEBIT = 52,
   INVESTMENT_TOTAL_CREDIT = 552,
-  INVESTMENT_PARTIAL_CREDIT = 553,
 }
